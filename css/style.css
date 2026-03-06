@@ -73,13 +73,10 @@ body{
     transition: 0.5s;
 }
 .image img{
-     width: 200px;
+     width: 400px;
 }
-.image img:hover{
-    transition: 4s;
-    width: 400px;
-    height: 300px;
-}
+
+
 .about-text{
     color: #ff5e57;
 }
