@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+
+}
+.navbar:hover{
+    background: black;
+    color: #dbe1e7;
+}
+.menu-list a{
+    text-decoration: none;
+    color:rgb(19, 18, 18)
+
+}
+.menu-list a:hover{
+    color: #ff5e57;
+    
+}
+
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.btn{
+    background: #ff5e57;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.btn:hover{
+    background: black;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+
+.content{
+    display: flex;
+     align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background: #e9eef3;
+    height: 550px;
+}
+.content h1:hover{
+    font-size:35px ;
+    transition: 5s;
+    color: cadetblue;
+}
+.btn-more{
+    padding: 10px 10px;
+    color: #ff5e57;
+    background-color: #dbe1e7;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid black;
+    
+
+}
+.btn-more:hover{
+    background: black;
+    color: #dbe1e7;
+    transition: 0.5s;
+}
+.image img{
+     width: 200px;
+}
+.image img:hover{
+    transition: 4s;
+    width: 400px;
+    height: 300px;
+}
+.about-text{
+    color: #ff5e57;
+}
+.about-text:hover{
+    color: black;
+}
+.logoul{
+    display: flex;
+    justify-content:left;
+    gap:15px;
+    margin-top: 30px;
+}
+.logo ul{
+    list-style: none;
+}
+a img{
+    height: 20px;
+    
+}
+.section-Education{
+    padding-top: 20px;
+    background: #ff5e57;
+    padding-left: 20px;
+    height: 550px;
+}
+.img-tr img{
+display: none;
+position:sticky;
+}
+
+.img-tr:hover img{
+width:400px;
+height:200px;
+display: block;
+opacity: 0.8;
+border:1px solid ;
+
+}
+.skill-sec{
+    padding-top:20px;
+    background: #dbe1e7;
+    height: 200px;
+}
+.skill-sec h1{
+    padding-left:20px ;
+}
+.skill-set{
+    border: 5px;
+    border-style: solid;
+    justify-content:center;
+    align-items: center;
+    height: 70px;
+    width: 90%;
+    margin-left: 40px;
+    border-radius: 20px;
+    
+}
+.skill-ul{
+  display: flex;
+  list-style: none;   
+  justify-content: space-around;
+  padding-top: 7px;
+   
+}
+.skill-set:hover{
+    background: #ff5e57;
+    transition: 2s;
+}
+html{
+    scroll-behavior: smooth;
+}
