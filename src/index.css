@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: #020617;
+    color: #e5e7eb;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(56, 189, 248, 0.35);
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .container-section {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass-card {
+    @apply border border-white/10 bg-white/[0.06] shadow-card backdrop-blur-xl;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-sky-300 via-cyan-200 to-fuchsia-300 bg-clip-text text-transparent;
+  }
+
+  .primary-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-sky-400 to-fuchsia-500 px-6 py-3 text-sm font-bold text-white shadow-glow transition hover:-translate-y-1 hover:shadow-sky-500/30;
+  }
+
+  .secondary-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/10 px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-1 hover:border-sky-300/50 hover:bg-white/15;
+  }
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+}
+
+.card-tilt {
+  transform-style: preserve-3d;
+  transition: transform 280ms ease, border-color 280ms ease, background 280ms ease;
+}
+
+.card-tilt:hover {
+  transform: perspective(900px) rotateX(4deg) rotateY(-6deg) translateY(-8px);
+}
+
+.soft-blur {
+  filter: blur(70px);
+}
