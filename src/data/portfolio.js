@@ -124,8 +124,8 @@ export const experience = [
 export const contactItems = [
   { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
   { icon: Phone, label: 'Phone', value: profile.phone, href: `tel:${profile.phone}` },
-  { icon: GitBranch, label: 'GitHub', value: 'github.com/your-github-username', href: profile.github },
-  { icon: Globe2, label: 'LinkedIn', value: 'linkedin.com/in/your-linkedin-username', href: profile.linkedin },
+  { icon: GitBranch, label: 'GitHub', value: 'https://github.com/poovu1010', href: profile.github },
+  { icon: Globe2, label: 'LinkedIn', value: 'www.linkedin.com/in/poovarasan-b-3ab443257', href: profile.linkedin },
   { icon: MapPin, label: 'Location', value: profile.location, href: '#' },
 ];
 
